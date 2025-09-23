@@ -1,1 +1,3 @@
-print(5, 10, 21)
+print(5)
+print(10)
+print(21)
