@@ -1,9 +1,8 @@
+jiteli = int(input("Количество жителей: "))
+teritoria = float(input("Площадь территории: "))
 
-P = int(input("Введите количество жителей: "))
-S = float(input("Введите площадь территории (в км²): "))
-
-if S != 0:
-    density = P / S
-    print(f"Плотность населения: {density} человек на км²")
+if teritoria != 0:
+    plotnost = jiteli / teritoria
+    print(f"Плотность: {plotnost} человек на единицу площади")
 else:
-    print("Площадь территории не может быть равна нулю.")
+    print("Площадь не может быть равна нулю.")
