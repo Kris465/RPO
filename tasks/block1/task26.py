@@ -1,3 +1,3 @@
-r = int(input())
-d = 2 * r
-print(d)
+radius = int(input("Введите радиус: "))
+diameter = 2 * radius
+print("Диаметр окружности равен:", diameter)
