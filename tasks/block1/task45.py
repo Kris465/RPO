@@ -11,7 +11,7 @@ proizvedenie = num1 * num2
 if num2 != 0:
     chastnoe = num1 / num2
 else:
-    chastnoe = "Деление на ноль невозможно"1
+    chastnoe = "Деление на ноль невозможно"
 
 # Вывод результатов
 print(f"Сумма: {summa}")
