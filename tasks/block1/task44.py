@@ -1,11 +1,7 @@
-import math
+from math import sqrt
 
-a = float(input("Введите длину стороны a: "))
-b = float(input("Введите длину стороны b: "))
+a = int(input("Введите первую сторону прямоугольника: "))
+b = int(input("Введите вторую сторону прямоугольника: "))
 
-perimeter = 2 * (a + b)
-
-diagonal = math.sqrt(a ** 2 + b ** 2)
-
-print(f"Периметр прямоугольника: {perimeter}")
-print(f"Длина диагонали: {diagonal}")
+print("Периметр прямоугольника равен: ", 2 * (a + b))
+print("Длина диагонали прямоугольника равна: ", sqrt(a**2 + b**2))
