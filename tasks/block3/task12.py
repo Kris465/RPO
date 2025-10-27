@@ -3,9 +3,9 @@ y = -1
 a = x ** 2 - y ** 2
 print(a)
 
-x = 2 
+x = 2
 y = -2
-b = x >= 2 or y ** 2 != 4 
+b = x >= 2 or y ** 2 != 4
 print(b)
 
 x = 2
@@ -13,7 +13,7 @@ y = 2
 v = x >= 0 and y ** 2 > 4
 print(v)
 
-x = 1 
+x = 1
 y = 2
 g = x * y != 4 and y > x
 print(g)
