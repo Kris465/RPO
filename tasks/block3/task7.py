@@ -12,4 +12,3 @@ c = (A or B and not C) and C
 print("а)", a)
 print("б)", b)
 print("в)", c)
-
