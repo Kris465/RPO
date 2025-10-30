@@ -1,13 +1,14 @@
-n = int(input("Введите натуральное число n (> 9): "))
+A = input("Введите true или false: ")
+B = input("Введите true или false: ")
+C = input("Введите true или false: ")
+rez1 = not (A or not B and C)
+rez2 = A and not (B and not C)
+rez3 = not (not A or B and not C)
 
-
-if n <= 9:
-    print("Число должно быть больше 9.")
-else:
-
-    units = n % 10
-
-    tens = (n // 10) % 10
-
-    print(f"Единицы: {units}")
-    print(f"Десятки: {tens}")
+print("a)", rez1)
+print("б)", rez2)
+print("в)", rez3)
+# Вычислить значение логического выражения при всех возможных значениях
+# а) не (А или не В и С);
+# б) А и не (В и или не С);
+# в) не (не А или В и С).

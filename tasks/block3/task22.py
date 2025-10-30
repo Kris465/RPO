@@ -1,4 +1,11 @@
-n = int(input("Введите n "))
-n1 = n // 10
-n2 = n / 100
-print("a)", n1,  "б)", n2)
+x = input("Введите true или false: ")
+y = input("Введите true или false: ")
+z = input("Введите true или false: ")
+
+resX = not (x or not y and z)
+resY = y or (x and not y or z)
+resZ = not (not x and y or z)
+
+print("a)", resX)
+print("б)", resY)
+print("в)", resZ)

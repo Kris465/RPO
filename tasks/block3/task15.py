@@ -1,12 +1,9 @@
-num = int(input("Введите трехзначное число: "))
+A = input("Введите A: ")
+B = input("Введите B: ")
+a = not A or not B
+b = A and (A or not B)
+c = (not A or B) and B
 
-if 100 <= num <= 999:
-    num_str = str(num)
-    last_digit = num_str[-1]
-    remaining_digits = num_str[:-1]
-    # Формируем новое число
-    new_num_str = last_digit + remaining_digits
-    new_num = int(new_num_str)
-    print("Полученное число:", new_num)
-else:
-    print("Ошибка: введено число не является трехзначным.")
+print("а)", a)
+print("б)", b)
+print("в)", c)

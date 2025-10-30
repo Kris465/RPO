@@ -1,14 +1,14 @@
-# Вводим трехзначное число
-num = int(input("Введите трехзначное число: "))
+# Вычислить значение логического выражение при всех возможных значениях
+# логических величин x и y
+# a) не (x или y)
+# б) не (x и y)
+# в) x и не y
+x = input("Введите true или false: ")
+y = input("Введите true или false: ")
+rez1 = not (x or y)
+rez2 = not x and y
+rez3 = x and not y
 
-# Проверка, что число действительно трехзначное
-if 100 <= num <= 999:
-    num_str = str(num)
-    first_digit = num_str[0]
-    remaining_digits = num_str[1:]
-    # Формируем новое число
-    new_num_str = remaining_digits + first_digit
-    new_num = int(new_num_str)
-    print("Полученное число:", new_num)
-else:
-    print("Ошибка: введено число не является трехзначным.")
+print("a)", rez1)
+print("б)", rez2)
+print("в)", rez3)

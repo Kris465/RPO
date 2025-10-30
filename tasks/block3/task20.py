@@ -1,10 +1,10 @@
-number = 1234
-reversed_number = int(str(number)[::-1])
-print(reversed_number)
+x = input("Введите true или false: ")
+y = input("Введите true или false: ")
 
-number = 5434
-num_str = str(number)
+rez1 = not (not x or y) or not x
+rez2 = not (not x and not y) and x
+rez3 = not (x or not y) or not y
 
-# Переставляем цифры: вторая, первая,  четвертая, третья.
-result = int(num_str[1] + num_str[0] + num_str[3] + num_str[2])
-print(result)
+print("a)", rez1)
+print("б)", rez2)
+print("в)", rez3)
