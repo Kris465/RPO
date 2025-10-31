@@ -5,6 +5,7 @@ def determine_area(x, y):
     else:
         return "Область II"
 
+
 x = float(input("Введите x: "))
 y = float(input("Введите y: "))
 
